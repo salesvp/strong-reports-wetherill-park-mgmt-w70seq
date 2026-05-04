@@ -86,7 +86,6 @@ body { font-family: 'Montserrat', sans-serif; background: #f5f5f5; color: #000; 
 var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 function parseReport(filename) {
-  // New format: strong-location-type-MM-YYYY.html
   var m1 = filename.match(/^strong-.+-(management|team)-(\d{2})-(\d{4})\.html$/);
   if (m1) {
     var mi = parseInt(m1[2]) - 1;
@@ -94,7 +93,6 @@ function parseReport(filename) {
     return buildReport(filename, mi, year);
   }
   
-  // Legacy format: mon-yyyy.html
   var SHORT = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
   var m2 = filename.match(/^([a-z]{3})-(\d{4})\.html$/);
   if (m2) {
@@ -132,7 +130,7 @@ function buildReport(filename, mi, year) {
   };
 }
 
-fetch('https://api.github.com/repos/salesvp/strong-reports-wetherill-park-management/contents/')
+fetch('https://api.github.com/repos/salesvp/strong-reports-wetherill-park-mgmt-w70seq/contents/')
   .then(function(r) { return r.json(); })
   .then(function(files) {
     var reports = [];
