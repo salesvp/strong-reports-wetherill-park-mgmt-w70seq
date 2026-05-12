@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>strong-wetherill-park-management-04-2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js"></script>
+<style>
+@font-face { font-family: 'Kessel Heavy'; src: url('data:font/woff2;base64,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') format('woff2'); font-weight: 900; font-style: normal; }
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --sky: #87CEEB;
+  --sky-light: #E6F7FF;
+  --gray-light: #f5f5f5;
+  --gray-border: #e0e0e0;
+  --success: #2ecc71;
+  --warning-acc: #f59e0b;
+  --danger-acc: #ef4444;
+  --topbar-h: 52px;
+  --secbar-h: 36px;
+  --transition: 0.2s ease;
+}
+* { box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background: var(--gray-light); color: var(--black); font-size: 13px; line-height: 1.6; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+#page-wrap { padding-top: calc(var(--topbar-h) + var(--secbar-h)); }
+.content-area { max-width: 1200px; margin: 0 auto; padding: 36px 48px 80px; }
+
+/* Topbar */
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar-h); background: var(--black); border-bottom: 1px solid #1a1a1a; display: flex; align-items: center; padding: 0 20px 0 24px; z-index: 1000; gap: 0; }
+.tb-wordmark { font-family: 'Kessel Heavy', 'Arial Black', sans-serif; font-size: 22px; color: var(--sky); letter-spacing: 3px; line-height: 1; white-space: nowrap; text-decoration: none; flex-shrink: 0; margin-right: 16px; }
+.tb-doc-name { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #555; white-space: nowrap; flex-shrink: 0; }
+.tb-pills { display: flex; gap: 6px; align-items: center; margin-left: auto; flex-shrink: 0; }
+.tb-pill { padding: 4px 10px; border-radius: 20px; border: 1px solid #2a2a2a; font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #666; }
+.tb-pill.hi { border-color: rgba(135,206,235,0.3); color: var(--sky); background: rgba(135,206,235,0.07); }
+.tb-cog { width: 30px; height: 30px; flex-shrink: 0; background: none; border: 1px solid #2a2a2a; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all var(--transition); }
+.tb-cog svg { width: 13px; height: 13px; color: #666; }
+.tb-cog:hover, .tb-cog.active { border-color: var(--sky); background: rgba(135,206,235,0.1); }
+.tb-cog:hover svg, .tb-cog.active svg { color: var(--sky); }
+
+/* Section bar */
+.secbar { position: fixed; top: var(--topbar-h); left: 0; right: 0; height: var(--secbar-h); background: var(--black); border-bottom: 2px solid var(--sky); display: flex; align-items: stretch; z-index: 990; }
+.sec-link { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; text-decoration: none; font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #666; transition: all var(--transition); border-right: 1px solid #111; }
+.sec-link:last-child { border-right: none; }
+.sec-link:hover { color: var(--sky); background: rgba(135,206,235,0.05); }
+.sec-link.active { color: var(--sky); background: rgba(135,206,235,0.08); }
+.sec-num { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: rgba(135,206,235,0.15); font-size: 8px; font-weight: 700; color: var(--sky); flex-shrink: 0; }
+.sec-link.active .sec-num { background: var(--sky); color: var(--black); }
+
+/* Back to top */
+.btt { position: fixed; bottom: 24px; right: 24px; width: 40px; height: 40px; background: #000; border: 1px solid #87CEEB; color: #87CEEB; text-decoration: none; display: flex; align-items: center; justify-content: center; font-size: 16px; opacity: 0; transition: opacity 0.3s; z-index: 500; border-radius: 2px; }
+.btt.visible { opacity: 1; }
+
+/* Width toggle */
+.width-toggle { position: fixed; bottom: 70px; right: 24px; width: 40px; height: 40px; background: var(--black); border: 1px solid var(--sky); border-radius: 2px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 500; transition: all var(--transition); }
+.width-toggle:hover { border-color: var(--sky); }
+.width-toggle svg { width: 14px; height: 14px; color: var(--sky); }
+.width-toggle.fw { border-color: #333; }
+.width-toggle.fw svg { color: #666; }
+
+/* Page header */
+.page-header { background: #000; padding: 36px 48px 32px; border-bottom: 3px solid #87CEEB; }
+.page-header-inner { max-width: 1200px; margin: 0 auto; }
+.crumb { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #666666; margin-bottom: 8px; }
+.crumb span { color: #87CEEB; }
+.page-header h1 { font-family: 'Kessel Heavy', 'Arial Black', sans-serif; font-size: 42px; letter-spacing: 6px; text-transform: uppercase; color: #fff; line-height: 1; margin-bottom: 16px; margin-top: 0; }
+.meta-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.meta-pill { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #87CEEB; border: 1px solid rgba(135,206,235,0.4); padding: 3px 10px; border-radius: 20px; }
+
+/* Section cards */
+.section-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 2px; margin-bottom: 12px; overflow: hidden; }
+.section-card-header { background: #000; padding: 14px 20px; border-bottom: 2px solid #87CEEB; display: flex; align-items: center; justify-content: space-between; }
+.section-num-label { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #87CEEB; margin-bottom: 5px; }
+.section-title { font-family: 'Kessel Heavy', 'Arial Black', sans-serif; font-size: 22px; letter-spacing: 3px; text-transform: uppercase; color: #fff; line-height: 1; }
+.section-title em { font-style: normal; color: #87CEEB; }
+.section-card-body { padding: 18px 20px; }
+.section-gap { height: 28px; }
+
+/* Metric cards */
+.metric-strip { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 12px; }
+.metric-strip.three { grid-template-columns: repeat(3,1fr); }
+.m-card { background: #000; border-radius: 2px; padding: 20px 18px; border-bottom: 3px solid #87CEEB; }
+.m-lbl { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #555; margin-bottom: 8px; }
+.m-val { font-family: 'Kessel Heavy', 'Arial Black', sans-serif; font-size: 28px; color: #87CEEB; letter-spacing: 2px; line-height: 1; }
+.m-val.pos { color: #2ecc71; }
+.m-val.warn { color: #f59e0b; }
+.m-val.neg { color: #ef4444; }
+.m-sub { font-size: 10px; color: #aaa; margin-top: 6px; }
+
+/* Inner cards */
+.card { background: #fff; border: 1px solid #e0e0e0; border-radius: 2px; margin-bottom: 12px; }
+.card-head { background: #000; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; }
+.card-title { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #87CEEB; }
+.card-body { padding: 16px; }
+
+/* Tables */
+.data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.data-table th { background: #000; color: #fff; padding: 9px 12px; text-align: left; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; white-space: nowrap; }
+.data-table td { padding: 9px 12px; border-bottom: 1px solid #f0f0f0; color: #333; }
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr.total td { font-weight: 700; background: #f5f5f5; border-top: 2px solid #000; }
+
+/* Takeaways */
+.takeaways { background: #f8f9fa; border: 1px solid #e0e0e0; border-left: 3px solid #87CEEB; border-radius: 2px; padding: 16px 18px; margin-top: 12px; }
+.takeaways-title { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #000; margin-bottom: 10px; }
+.takeaways ul { list-style: none; padding: 0; margin: 0; }
+.takeaways li { font-size: 13px; color: #333; line-height: 1.65; padding: 5px 0 5px 16px; position: relative; border-bottom: 1px solid #eee; }
+.takeaways li:last-child { border-bottom: none; }
+.takeaways li::before { content: ">"; color: #87CEEB; position: absolute; left: 0; top: 6px; font-size: 10px; }
+
+/* Insight */
+.insight-text { font-size: 14px; line-height: 1.75; color: #333; margin-bottom: 12px; }
+.insight-text p { margin-bottom: 12px; margin-top: 0; }
+
+/* Exec sections */
+.exec-section { background: #fff; border: 1px solid #e0e0e0; border-radius: 2px; padding: 18px 20px; margin-bottom: 12px; }
+.exec-section-title { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #000; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #87CEEB; }
+.exec-list { list-style: none; padding: 0; margin: 0; }
+.exec-list li { font-size: 13px; color: #333; line-height: 1.65; padding: 5px 0 5px 14px; position: relative; border-bottom: 1px solid #e0e0e0; }
+.exec-list li:last-child { border-bottom: none; }
+.exec-list li::before { content: ">"; color: #87CEEB; position: absolute; left: 0; top: 6px; font-size: 10px; }
+.exec-list li strong { color: #000; font-weight: 700; }
+
+/* Layout patterns */
+.two-col { display: flex; gap: 12px; margin-bottom: 12px; align-items: stretch; }
+.two-col .card { flex: 1; display: flex; flex-direction: column; }
+.two-col .card .card-body { flex: 1; display: flex; flex-direction: column; }
+.two-col .card .card-body .chart-canvas-wrap { flex: 1; height: auto; min-height: 180px; }
+.three-col { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 12px; }
+
+/* Charts */
+.chart-canvas-wrap { position: relative; height: 220px; width: 100%; display: block; }
+.chart-canvas-wrap canvas { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
+
+/* Edit mode */
+.edit-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 2000; align-items: center; justify-content: center; backdrop-filter: blur(3px); }
+.edit-overlay.active { display: flex; }
+.edit-modal { background: var(--black); border: 1px solid #2a2a2a; border-top: 3px solid var(--sky); border-radius: 2px; width: 600px; max-width: 94vw; max-height: 85vh; display: flex; flex-direction: column; overflow: hidden; }
+.modal-head { padding: 16px 20px; border-bottom: 1px solid #1a1a1a; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+.modal-head-title { font-family: 'Kessel Heavy', 'Arial Black', sans-serif; font-size: 14px; letter-spacing: 2px; color: var(--sky); text-transform: uppercase; }
+.modal-section-label { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #555; }
+.modal-close { width: 28px; height: 28px; background: none; border: 1px solid #333; border-radius: 2px; color: #666; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all var(--transition); flex-shrink: 0; }
+.modal-close:hover { border-color: var(--sky); color: var(--sky); }
+.modal-body { padding: 20px; overflow-y: auto; flex: 1; }
+.modal-field { margin-bottom: 16px; } .modal-field:last-child { margin-bottom: 0; }
+.field-label { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #666; margin-bottom: 6px; display: block; }
+.field-input { width: 100%; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 13px; line-height: 1.6; padding: 10px 12px; resize: vertical; transition: border-color var(--transition); }
+.field-input:focus { outline: none; border-color: var(--sky); }
+.bullet-list-editor { display: flex; flex-direction: column; gap: 6px; }
+.bullet-row { display: flex; gap: 6px; align-items: flex-start; }
+.bullet-input { flex: 1; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 13px; line-height: 1.6; padding: 8px 10px; resize: vertical; transition: border-color var(--transition); }
+.bullet-input:focus { outline: none; border-color: var(--sky); }
+.bullet-remove { width: 28px; height: 34px; flex-shrink: 0; background: none; border: 1px solid #2a2a2a; border-radius: 2px; color: #555; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all var(--transition); font-size: 16px; margin-top: 1px; }
+.bullet-remove:hover { border-color: var(--danger-acc); color: var(--danger-acc); }
+.add-bullet-btn { background: none; border: 1px dashed #333; border-radius: 2px; color: #555; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 7px; cursor: pointer; transition: all var(--transition); width: 100%; }
+.add-bullet-btn:hover { border-color: var(--sky); color: var(--sky); }
+.modal-foot { padding: 14px 20px; border-top: 1px solid #1a1a1a; display: flex; gap: 8px; justify-content: flex-end; flex-shrink: 0; }
+.btn { padding: 8px 18px; border-radius: 2px; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; transition: all var(--transition); border: 1px solid transparent; }
+.btn-cancel { background: none; border-color: #333; color: #666; } .btn-cancel:hover { border-color: #555; color: #aaa; }
+.btn-save { background: var(--sky); border-color: var(--sky); color: var(--black); transition: all var(--transition); } .btn-save:hover { background: #6bb8d4; border-color: #6bb8d4; }
+.btn-save.pending { background: var(--warning-acc); border-color: var(--warning-acc); color: var(--black); } .btn-save.pending:hover { background: #e08c00; border-color: #e08c00; }
+.btn-export { background: none; border-color: rgba(135,206,235,0.3); color: var(--sky); margin-right: auto; } .btn-export:hover { background: rgba(135,206,235,0.07); }
+.pw-gate { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 3000; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
+.pw-gate.active { display: flex; }
+.pw-box { background: var(--black); border: 1px solid #2a2a2a; border-top: 3px solid var(--sky); border-radius: 2px; padding: 32px; width: 360px; max-width: 94vw; text-align: center; }
+.pw-title { font-family: 'Kessel Heavy', 'Arial Black', sans-serif; font-size: 16px; letter-spacing: 3px; color: var(--sky); text-transform: uppercase; margin-bottom: 8px; }
+.pw-sub { font-size: 11px; color: #555; letter-spacing: 1px; margin-bottom: 24px; }
+.pw-input { width: 100%; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; color: var(--white); font-family: 'Montserrat', sans-serif; font-size: 14px; padding: 11px 14px; text-align: center; letter-spacing: 3px; margin-bottom: 12px; transition: border-color var(--transition); }
+.pw-input:focus { outline: none; border-color: var(--sky); }
+.pw-error { font-size: 11px; color: var(--danger-acc); margin-bottom: 12px; min-height: 16px; }
+.pw-submit { width: 100%; background: var(--sky); border: none; border-radius: 2px; color: var(--black); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 11px; cursor: pointer; transition: all var(--transition); }
+.pw-submit:hover { background: #6bb8d4; }
+.pw-cancel { width: 100%; background: none; border: 1px solid #2a2a2a; border-radius: 2px; color: #555; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 9px; cursor: pointer; margin-top: 8px; transition: all var(--transition); }
+.pw-cancel:hover { border-color: #555; color: #888; }
+.edit-trigger { display: none; width: 24px; height: 24px; flex-shrink: 0; background: rgba(135,206,235,0.08); border: 1px solid rgba(135,206,235,0.2); border-radius: 2px; cursor: pointer; align-items: center; justify-content: center; transition: all var(--transition); }
+.edit-trigger:hover { background: rgba(135,206,235,0.18); border-color: var(--sky); }
+.edit-trigger svg { width: 11px; height: 11px; color: var(--sky); }
+body.edit-mode .edit-trigger { display: flex; }
+body.edit-mode .section-card { outline: 1px dashed rgba(135,206,235,0.15); }
+.edit-banner { display: none; position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--sky); color: var(--black); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 8px 20px; border-radius: 20px; z-index: 700; white-space: nowrap; }
+body.edit-mode .edit-banner { display: block; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page-header { padding: 28px 20px 24px; }
+  .page-header h1 { font-size: 26px; letter-spacing: 3px; }
+  .content-area { padding: 20px 16px 60px; }
+  .metric-strip { grid-template-columns: 1fr !important; gap: 8px; }
+  .metric-strip.three { grid-template-columns: 1fr !important; }
+  .m-card { padding: 14px 12px; }
+  .m-val { font-size: 22px; }
+  .section-card-body { padding: 14px 14px; }
+  .section-card-header { padding: 12px 14px; }
+  .section-title { font-size: 16px; letter-spacing: 2px; }
+  .data-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .data-table th, .data-table td { font-size: 11px; padding: 7px 8px; }
+  .tb-cog { display: none; }
+  .tb-doc-name { display: none; }
+  .secbar { display: none; }
+  #page-wrap { padding-top: 52px; }
+  .two-col { flex-direction: column; }
+  .two-col .card { flex: none; width: 100%; }
+  .three-col { grid-template-columns: 1fr !important; }
+  .chart-canvas-wrap { min-height: 220px; }
+  .exec-section { padding: 14px 14px; }
+}
+@media (max-width: 400px) {
+  .page-header h1 { font-size: 22px; letter-spacing: 2px; }
+}
+@media (max-width: 1024px) {
+  .insight-text { font-size: 12px; line-height: 1.6; }
+  .insight-text p { margin-bottom: 8px; }
+  .exec-list li { font-size: 12px; line-height: 1.5; }
+  .takeaways li { font-size: 12px; }
+  .section-card-body p { font-size: 12px; line-height: 1.6; }
+}
+</style>
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div class="pw-gate" id="pwGate"><div class="pw-box"><div class="pw-title">Edit Mode</div><div class="pw-sub">Enter password to unlock</div><input class="pw-input" id="pwInput" type="password" placeholder="••••••••" autocomplete="off"><div class="pw-error" id="pwError"></div><button class="pw-submit" id="pwSubmit">Unlock</button><button class="pw-cancel" id="pwCancel">Cancel</button></div></div>
+
+<!-- EDIT MODAL -->
+<div class="edit-overlay" id="editOverlay"><div class="edit-modal" id="editModal"><div class="modal-head"><div><div class="modal-section-label" id="modalSectionLabel"></div><div class="modal-head-title" id="modalTitle"></div></div><button class="modal-close" id="modalClose">✕</button></div><div class="modal-body" id="modalBody"></div><div id="discardGate" style="display:none;padding:12px 20px;background:#1a0d00;border-top:1px solid rgba(249,115,22,0.3);flex-shrink:0;"><div style="font-size:11px;color:#f97316;font-weight:700;margin-bottom:8px;">You have unsaved changes.</div><div style="display:flex;gap:8px;"><button class="btn btn-cancel" style="color:#ef4444;border-color:rgba(239,68,68,0.3);font-size:10px;padding:5px 12px;" onclick="discardAndClose()">Discard changes</button><button class="btn btn-cancel" style="font-size:10px;padding:5px 12px;" onclick="hideDiscardGate()">Go back to save</button></div></div><div class="modal-foot"><button class="btn btn-export" id="btnExport">↓ Export HTML</button><button class="btn btn-cancel" id="btnCancel">Cancel</button><button class="btn btn-save" id="btnSave">Save Changes</button></div></div></div>
+
+<!-- EDIT BANNER -->
+<div class="edit-banner">Edit Mode Active — click ✏ icons to edit sections</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a class="tb-wordmark" href="#">STRONG</a>
+  <span class="tb-doc-name">SALES REPORT</span>
+  <div class="tb-pills">
+    <span class="tb-pill hi">Wetherill Park</span>
+    <button class="tb-cog" id="editToggleBtn" onclick="triggerEditMode()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+  </div>
+</div>
+
+<!-- SECTION BAR -->
+<nav class="secbar">
+  <a class="sec-link active" href="#s01"><span class="sec-num">01</span>Executive Summary</a>
+  <a class="sec-link" href="#s02"><span class="sec-num">02</span>Client Activity</a>
+  <a class="sec-link" href="#s03"><span class="sec-num">03</span>Studio Financials</a>
+  <a class="sec-link" href="#s04"><span class="sec-num">04</span>Session Attendance</a>
+  <a class="sec-link" href="#s05"><span class="sec-num">05</span>Sales &amp; Performance</a>
+  <a class="sec-link" href="#s06"><span class="sec-num">06</span>Summary</a>
+</nav>
+
+<div id="page-wrap">
+
+<!-- PAGE HEADER -->
+<div class="page-header"><div class="page-header-inner">
+  <div class="crumb">STRONG Pilates <span>/ Sales Report</span></div>
+  <h1>Wetherill Park</h1>
+  <div class="meta-pills">
+    <span class="meta-pill">April 2026</span>
+    <span class="meta-pill">Rolling Quarter</span>
+    <span class="meta-pill">Feb 2026 – Apr 2026</span>
+  </div>
+</div></div>
+
+<div class="content-area">
+
+<!-- ============================================ -->
+<!-- SECTION 01: EXECUTIVE SUMMARY -->
+<!-- ============================================ -->
+<span class="section-anchor" id="s01" style="display:block;height:0;"></span>
+<div class="section-gap"></div>
+<div class="section-card">
+  <div class="section-card-header">
+    <div>
+      <div class="section-num-label">01</div>
+      <div class="section-title">Executive <em>Summary</em></div>
+    </div>
+    <button class="edit-trigger" onclick="openEditModal('exec-issues','Executive Summary','Key Issues')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+  </div>
+  <div class="section-card-body">
+
+    <!-- ROW 1: CURRENT STATE -->
+    <div class="card" style="margin-bottom:12px;">
+      <div class="card-head">
+        <span class="card-title">Current State</span>
+      </div>
+      <div class="card-body">
+        <div class="insight-text">
+          <p data-field="exec-current-membership"><strong>Membership:</strong> Membership stabilised across the quarter, with total members holding from 252 in February through 247 in March to 248 in April. Active membership eased to 189 across both March and April, leaving the active rate at 76.21% — still in the warning band below the 80% benchmark.</p>
+          <p data-field="exec-current-revenue"><strong>Revenue:</strong> Gross revenue eased from February's $56,460 through March's $52,996 to April's $51,747, totalling $161,203 across the rolling quarter. Membership revenue held as the dominant stream at $43,078 in April, representing 83% of gross — the membership base is holding the revenue floor despite acquisition softness.</p>
+          <p data-field="exec-current-util"><strong>Utilisation:</strong> Utilisation softened progressively, with booking declining from 57.33% in February through 52.98% in March to 46.59% in April — well below the 75–85% target. Attendance followed at 43.86% in April. The booking–attendance gap held tight at 2.73%, confirming members who book consistently attend.</p>
+          <p data-field="exec-current-sales"><strong>Sales vs Cancellations:</strong> Membership sales recovered modestly from March's 9 to 11 in April against 10 cancellations — a marginal net positive but still well below the team's demonstrated capability of 21. First visits collapsed to 39 in April, 59% below the prior year's 96 — the steepest deficit in the rolling year.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: THREE-COL -->
+    <div class="three-col">
+      <div class="exec-section">
+        <div class="exec-section-title">Key Issues</div>
+        <ul class="exec-list" data-field="exec-issues">
+          <li><strong>First visits collapsed:</strong> April's 39 first visits sits 59% below the prior year's 96 — the steepest deficit in the rolling year</li>
+          <li><strong>Membership sales below capability:</strong> April's 11 sales remains well below the team's demonstrated capability of 21 despite full sales support</li>
+          <li><strong>Intro offer conversion broken:</strong> Intro offer clients are not converting at the rate FOH process discipline and cancellation health would predict</li>
+          <li><strong>Utilisation slipped further:</strong> Booking at 46.59% and attendance at 43.86% now sit in the negative band, materially below target</li>
+          <li><strong>Marketing budget unsecured:</strong> External marketing team and ads campaign not yet live, leaving April lead generation without paid support</li>
+          <li><strong>FOH-trainer journey disconnect:</strong> Member journey has a documented cohesion gap between FOH and Trainers undermining intro offer conversion</li>
+        </ul>
+      </div>
+      <div class="exec-section">
+        <div class="exec-section-title">Active Interventions Being Deployed</div>
+        <ul class="exec-list" data-field="exec-interventions">
+          <li><strong>External marketing team activation:</strong> Marketing budget being secured with external team scheduled to go live with paid ads late May into early June to rebuild lead flow</li>
+          <li><strong>All-hands realignment meeting:</strong> May team meeting addressing the FOH-trainer journey disconnect to restore cohesion across the intro offer experience and conversion handoff</li>
+          <li><strong>Mandatory STRONG 25 rollout:</strong> Tracking sheet now mandatory across the team to systemise first 25 classes retention discipline where the majority of cancellations occur</li>
+          <li><strong>Mother's Day lead conversion:</strong> Capitalising on Mother's Day attendance through direct outreach and post-session conversion email to single visit cohort into pack and membership sales</li>
+          <li><strong>Foundation rates last chance campaign:</strong> Running 25 May into mid-June to convert price-sensitive prospects before foundation rate window closes permanently</li>
+          <li><strong>20% more pack sale:</strong> Short sharp one-week pack promotion sized to drive immediate volume without cannibalising the larger EOFY pack sale</li>
+        </ul>
+      </div>
+      <div class="exec-section" style="margin-bottom:0;">
+        <div class="exec-section-title">Expected Outcomes</div>
+        <ul class="exec-list" data-field="exec-outcomes">
+          <li><strong>Rebuild first visit pipeline:</strong> External marketing activation should lift first visits back toward prior year benchmarks from April's 39</li>
+          <li><strong>Diagnose and close intro offer conversion gap:</strong> All-hands meeting outcomes should restore FOH-trainer cohesion across the member journey</li>
+          <li><strong>Hold sub-7% attrition:</strong> Mandatory STRONG 25 rollout should secure April's 4.05% improvement as the controlled retention floor</li>
+          <li><strong>Convert May lead capture into membership:</strong> Mother's Day single visit cohort outreach and foundation rate campaign should lift membership sales above April's 11</li>
+          <li><strong>Defend STRONG point of difference:</strong> Sharpened acquisition focus needed as new local pilates studios open and compete for the same prospect pool</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 02: CLIENT ACTIVITY -->
+<!-- ============================================ -->
+<span class="section-anchor" id="s02" style="display:block;height:0;"></span>
+<div class="section-gap"></div>
+<div class="section-card">
+  <div class="section-card-header">
+    <div>
+      <div class="section-num-label">02</div>
+      <div class="section-title">Client <em>Activity</em></div>
+    </div>
+    <button class="edit-trigger" onclick="openEditModal('mem-insight','Client Activity','Insight Text')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+  </div>
+  <div class="section-card-body">
+
+    <div class="metric-strip">
+      <div class="m-card">
+        <div class="m-lbl">Total Members</div>
+        <div class="m-val">248</div>
+        <div class="m-sub">vs 247 prior month</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Active Members</div>
+        <div class="m-val warn">189</div>
+        <div class="m-sub">76.21% active rate</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Suspended Members</div>
+        <div class="m-val">59</div>
+        <div class="m-sub">vs 58 prior month</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Attrition Rate</div>
+        <div class="m-val pos">4.05%</div>
+        <div class="m-sub">Target: sub-7%</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-head"><span class="card-title">Membership Status Trend</span></div>
+        <div class="card-body">
+          <div class="chart-canvas-wrap"><canvas id="chartMembership"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span class="card-title">Insight</span></div>
+        <div class="card-body">
+          <div class="insight-text">
+            <p data-field="mem-insight-p1">Membership stabilised across the quarter at Wetherill Park, with total members holding in a tight band from 252 in February through 247 in March to 248 in April. Active membership eased from February's quarter-high of 197 to 189 across both March and April, leaving the active rate at 76.21% — still in the warning band below the 80% benchmark. Suspended members crept from 55 to 59 across the same window.</p>
+            <p data-field="mem-insight-p2">Attrition extended its improvement run, dropping from 6.94% in February through March's 5.16% to 4.05% in April — the strongest reading of the rolling year and well inside the sub-7% target. Cancellations halved from 17 in February to 10 in April, with the STRONG 25 Tracking sheet mandatory rollout reinforcing early-stage retention discipline. The retention picture has materially improved; the constraint sits upstream in acquisition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Membership Status Trend — Monthly Detail</span></div>
+      <div class="card-body" style="padding:0;">
+        <table class="data-table">
+          <thead>
+            <tr><th>Month</th><th>Total Members</th><th>Active Members</th><th>Suspended Members</th><th>Active Rate %</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>February 2026</td><td>252</td><td>197</td><td>55</td><td>78.17%</td></tr>
+            <tr><td>March 2026</td><td>247</td><td>189</td><td>58</td><td>76.52%</td></tr>
+            <tr><td>April 2026</td><td>248</td><td>189</td><td>59</td><td>76.21%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="takeaways">
+      <div class="takeaways-title">Key Takeaways</div>
+      <ul data-field="mem-takeaways">
+        <li>Total membership stabilised in a tight 247–252 band across the quarter, with April closing at 248 — net flat against February</li>
+        <li>Active rate sits at 76.21% in April, in the warning band below the 80% benchmark — slightly below March's 76.52%</li>
+        <li>Attrition reached 4.05% in April — the strongest reading in the rolling year and well inside the sub-7% target</li>
+        <li>Cancellations halved from 17 in February to 10 in April, with mandatory STRONG 25 rollout reinforcing early-stage retention discipline</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 03: STUDIO FINANCIALS -->
+<!-- ============================================ -->
+<span class="section-anchor" id="s03" style="display:block;height:0;"></span>
+<div class="section-gap"></div>
+<div class="section-card">
+  <div class="section-card-header">
+    <div>
+      <div class="section-num-label">03</div>
+      <div class="section-title">Studio <em>Financials</em></div>
+    </div>
+    <button class="edit-trigger" onclick="openEditModal('fin-insight','Studio Financials','Insight Text')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+  </div>
+  <div class="section-card-body">
+
+    <div class="metric-strip">
+      <div class="m-card">
+        <div class="m-lbl">Gross Revenue</div>
+        <div class="m-val warn">$51,747</div>
+        <div class="m-sub">vs $52,996 prior month</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Membership Revenue</div>
+        <div class="m-val">$43,078</div>
+        <div class="m-sub">vs $45,648 prior month</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Package Revenue</div>
+        <div class="m-val">$6,614</div>
+        <div class="m-sub">vs $5,087 prior month</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Intro Offer Revenue</div>
+        <div class="m-val">$1,339</div>
+        <div class="m-sub">vs $1,625 prior month</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-head"><span class="card-title">Revenue by Stream</span></div>
+        <div class="card-body">
+          <div class="chart-canvas-wrap"><canvas id="chartRevenue"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span class="card-title">Insight</span></div>
+        <div class="card-body">
+          <div class="insight-text">
+            <p data-field="fin-insight-p1">Gross revenue eased steadily across the quarter, moving from February's $56,460 through March's $52,996 to April's $51,747 — a rolling three-month total of $161,203. Membership revenue held as the dominant stream, climbing to $45,648 in March before settling at $43,078 in April, representing 83% of April's gross. Package revenue normalised from February's $11,775 spike back to a $5,087–$6,614 baseline across March and April, while intro offer revenue tracked the softer acquisition volume from $1,686 in February to $1,339 in April.</p>
+            <p data-field="fin-insight-p2">The April step-down reflects continued acquisition pressure rather than a retention failure, with the membership base holding the revenue floor. POS revenue sat at $0 across all three months. Fees eased from $636 to $570 across March and April. (While late cancel fees contribute to revenue, the goal is not to increase this stream — reduced fees indicate better member attendance behavior, which drives long-term retention and stickiness.)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Studio Financials — Monthly Detail</span></div>
+      <div class="card-body" style="padding:0;">
+        <table class="data-table">
+          <thead>
+            <tr><th>Month</th><th>Gross Revenue</th><th>Memberships</th><th>Packages</th><th>Intro Offers</th><th>Fees</th><th>Other</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>February 2026</td><td>$56,460</td><td>$42,370</td><td>$11,775</td><td>$1,686</td><td>$594</td><td>$36</td></tr>
+            <tr><td>March 2026</td><td>$52,996</td><td>$45,648</td><td>$5,087</td><td>$1,625</td><td>$636</td><td>$0</td></tr>
+            <tr><td>April 2026</td><td>$51,747</td><td>$43,078</td><td>$6,614</td><td>$1,339</td><td>$570</td><td>$0</td></tr>
+            <tr class="total"><td>Quarter Total</td><td>$161,203</td><td>$131,096</td><td>$23,476</td><td>$4,650</td><td>$1,800</td><td>$36</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="takeaways">
+      <div class="takeaways-title">Key Takeaways</div>
+      <ul data-field="fin-takeaways">
+        <li>Gross revenue totalled $161,203 across the rolling quarter, easing from February's $56,460 to April's $51,747 — a 2.4% softening month-on-month</li>
+        <li>Membership revenue held the revenue floor at $43,078 in April — 83% of gross — confirming the membership base is buffering acquisition softness</li>
+        <li>Package revenue normalised from February's $11,775 spike back to a $5,087–$6,614 baseline across March and April</li>
+        <li>The April step-down reflects acquisition pressure, not retention failure — sustained sales activity is required to secure the revenue base</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 04: SESSION ATTENDANCE -->
+<!-- ============================================ -->
+<span class="section-anchor" id="s04" style="display:block;height:0;"></span>
+<div class="section-gap"></div>
+<div class="section-card">
+  <div class="section-card-header">
+    <div>
+      <div class="section-num-label">04</div>
+      <div class="section-title">Session <em>Attendance</em></div>
+    </div>
+    <button class="edit-trigger" onclick="openEditModal('att-insight','Session Attendance','Insight Text')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+  </div>
+  <div class="section-card-body">
+
+    <div class="metric-strip three">
+      <div class="m-card">
+        <div class="m-lbl">Booking Utilisation</div>
+        <div class="m-val neg">46.59%</div>
+        <div class="m-sub">Target: 75–85%</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Attendance Utilisation</div>
+        <div class="m-val neg">43.86%</div>
+        <div class="m-sub">Target: 70–75%</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Booking–Attendance Gap</div>
+        <div class="m-val pos">2.73%</div>
+        <div class="m-sub">Target: ≤10%</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-head"><span class="card-title">Utilisation Trend</span></div>
+        <div class="card-body">
+          <div class="chart-canvas-wrap"><canvas id="chartUtil"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span class="card-title">Insight</span></div>
+        <div class="card-body">
+          <div class="insight-text">
+            <p data-field="att-insight-p1">Utilisation softened progressively across the quarter, with booking declining from February's 57.33% through March's 52.98% to April's 46.59% — now sitting in the negative band well below the 75–85% target. Attendance utilisation followed the same arc, easing from 53.63% to 43.86% and slipping below the 55% threshold in April. Absolute volume confirmed the contraction: sessions booked fell from 2,462 in March to 1,860 in April as the session count itself was trimmed from 425 to 372.</p>
+            <p data-field="att-insight-p2">The booking–attendance gap held tight throughout at 2.73%–3.70%, confirming members who book continue to attend. The capacity challenge remains booking volume, not stickiness or dropout. Revenue per visit rose materially to $27.82 in April as session count tightened, but this is a mechanical effect of fewer sessions across a held revenue base — not a member engagement improvement. The lever sits squarely on top-of-funnel acquisition and intro offer conversion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Session Attendance — Monthly Detail</span></div>
+      <div class="card-body" style="padding:0;">
+        <table class="data-table">
+          <thead>
+            <tr><th>Month</th><th>Sessions</th><th>Booking Utilisation</th><th>Attendance Utilisation</th><th>Booking Capacity</th><th>Sessions Booked</th><th>Sessions Attended</th><th>Avg Rev/Visit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>February 2026</td><td>385</td><td>57.33%</td><td>53.63%</td><td>4,225</td><td>2,422</td><td>2,266</td><td>$23.31</td></tr>
+            <tr><td>March 2026</td><td>425</td><td>52.98%</td><td>49.73%</td><td>4,647</td><td>2,462</td><td>2,311</td><td>$21.53</td></tr>
+            <tr><td>April 2026</td><td>372</td><td>46.59%</td><td>43.86%</td><td>3,992</td><td>1,860</td><td>1,751</td><td>$27.82</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="takeaways">
+      <div class="takeaways-title">Key Takeaways</div>
+      <ul data-field="att-takeaways">
+        <li>Booking utilisation declined progressively from 57.33% in February to 46.59% in April — now in the negative band below the 75–85% target</li>
+        <li>Attendance utilisation slipped from 53.63% to 43.86%, falling below the 55% threshold in April for the first time in the rolling quarter</li>
+        <li>The booking–attendance gap held tight at 2.73%–3.70%, confirming members who book continue to attend — stickiness is not the issue</li>
+        <li>The capacity challenge is top-of-funnel acquisition volume, not member engagement or session dropout behaviour</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 05: SALES & PERFORMANCE -->
+<!-- ============================================ -->
+<span class="section-anchor" id="s05" style="display:block;height:0;"></span>
+<div class="section-gap"></div>
+<div class="section-card">
+  <div class="section-card-header">
+    <div>
+      <div class="section-num-label">05</div>
+      <div class="section-title">Sales &amp; <em>Performance</em></div>
+    </div>
+    <button class="edit-trigger" onclick="openEditModal('sales-insight','Sales &amp; Performance','Insight Text')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+  </div>
+  <div class="section-card-body">
+
+    <div class="metric-strip">
+      <div class="m-card">
+        <div class="m-lbl">Memberships Sold</div>
+        <div class="m-val pos">11</div>
+        <div class="m-sub">vs 9 prior month</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Intro Offers Sold</div>
+        <div class="m-val neg">26</div>
+        <div class="m-sub">vs 49 same month prior year</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">Attrition Rate</div>
+        <div class="m-val pos">4.05%</div>
+        <div class="m-sub">Target: sub-7%</div>
+      </div>
+      <div class="m-card">
+        <div class="m-lbl">First Visits</div>
+        <div class="m-val neg">39</div>
+        <div class="m-sub">vs 96 same month prior year</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="card-head"><span class="card-title">Sales vs Cancellations</span></div>
+        <div class="card-body">
+          <div class="chart-canvas-wrap"><canvas id="chartSalesCancel"></canvas></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head"><span class="card-title">Attrition Rate</span></div>
+        <div class="card-body">
+          <div class="chart-canvas-wrap"><canvas id="chartAttrition"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Sales Performance — All Products</span></div>
+      <div class="card-body">
+        <div class="chart-canvas-wrap" style="height:240px;"><canvas id="chartSalesPerf"></canvas></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Sales &amp; Performance — Monthly Detail</span></div>
+      <div class="card-body" style="padding:0;">
+        <table class="data-table">
+          <thead>
+            <tr><th>Month</th><th>Memberships Sold</th><th>Intro Offers Sold</th><th>Packs Sold</th><th>Cancelled Members</th><th>Attrition Rate</th><th>First Visits</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>February 2026</td><td>21</td><td>34</td><td>41</td><td>17</td><td>6.94%</td><td>66</td></tr>
+            <tr><td>March 2026</td><td>9</td><td>32</td><td>54</td><td>13</td><td>5.16%</td><td>72</td></tr>
+            <tr><td>April 2026</td><td>11</td><td>26</td><td>42</td><td>10</td><td>4.05%</td><td>39</td></tr>
+            <tr class="total"><td>Quarter Total</td><td>41</td><td>92</td><td>137</td><td>40</td><td>—</td><td>177</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Insight</span></div>
+      <div class="card-body">
+        <div class="insight-text">
+          <p data-field="sales-insight-p1">Acquisition softened further, with membership sales falling from February's 21 to 9 in March before a modest April recovery to 11 — still below team capability. Intro offers tracked downward from 34 to 26, with April sitting 46.94% below the same month prior year. First visits collapsed to 39 in April — a 59.4% decline against the prior year's 96, the steepest drop in the rolling year. Pack sales held firmest at 42.</p>
+          <p data-field="sales-insight-p2">The lead generation gap has become the binding constraint, with marketing budget being secured and an external marketing team going live late May / early June. Intro offer clients are not converting at the rate FOH process discipline and cancellation health would predict, and an all-hands meeting in May is realigning the FOH-trainer journey. Attrition improved further to 4.05%, confirming retention is not the issue. (As per fee insights above, fewer late cancel/no-shows indicate better attendance behavior.)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="takeaways">
+      <div class="takeaways-title">Key Takeaways</div>
+      <ul data-field="sales-takeaways">
+        <li>Membership sales recovered modestly from March's 9 to 11 in April but remain well below the team's demonstrated capability of 21</li>
+        <li>First visits collapsed to 39 in April — 59% below the prior year's 96, the steepest deficit in the rolling year</li>
+        <li>Intro offers eased to 26, sitting 46.94% below the same month prior year — intro offer conversion is the diagnosed binding constraint</li>
+        <li>Attrition improved further to 4.05% — well inside sub-7% target — confirming retention is no longer the issue</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SECTION 06: SUMMARY & PATH FORWARD -->
+<!-- ============================================ -->
+<span class="section-anchor" id="s06" style="display:block;height:0;"></span>
+<div class="section-gap"></div>
+<div class="section-card">
+  <div class="section-card-header">
+    <div>
+      <div class="section-num-label">06</div>
+      <div class="section-title">Summary &amp; <em>Path Forward</em></div>
+    </div>
+    <button class="edit-trigger" onclick="openEditModal('summary-insight','Summary &amp; Path Forward','Insight Text')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
+  </div>
+  <div class="section-card-body">
+
+    <div class="card">
+      <div class="card-head"><span class="card-title">Insight</span></div>
+      <div class="card-body">
+        <div class="insight-text">
+          <p data-field="summary-insight-p1">Wetherill Park closed the quarter with retention materially improved and acquisition the binding constraint. Attrition reached 4.05% in April — the strongest reading in the rolling year — and cancellations halved from 17 to 10. Membership revenue held the floor at $43,078, and the booking–attendance gap stayed tight at 2.73%. First visits fell to 39 (59% below prior year), intro offers eased to 26, and membership sales sat at 11.</p>
+          <p data-field="summary-insight-p2">The binding constraint has shifted from sales execution to lead generation and intro offer conversion. Marketing budget is being secured with an external marketing team going live late May / early June, and an all-hands meeting in May is realigning the FOH-trainer journey. The 20% more pack sale, foundation rate last chance campaign running 25 May into mid-June, and mandatory STRONG 25 rollout are all active. Competitive pressure from new local studios sharpens urgency to drive STRONG's point of difference.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="takeaways">
+      <div class="takeaways-title">Key Takeaways</div>
+      <ul data-field="summary-takeaways">
+        <li>Retention has materially improved — attrition at 4.05% is the strongest reading in the rolling year and cancellations halved across the quarter</li>
+        <li>The binding constraint has shifted from sales execution to lead generation and intro offer conversion, with first visits 59% below prior year</li>
+        <li>External marketing activation, May all-hands realignment meeting, and mandatory STRONG 25 rollout are the three primary levers for May/June</li>
+        <li>Competitive pressure from new local pilates studios sharpens urgency to defend and drive STRONG's point of difference</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- /content-area -->
+</div><!-- /page-wrap -->
+
+<!-- BACK TO TOP -->
+<a class="btt" id="btt" href="#page-wrap">↑</a>
+
+<!-- WIDTH TOGGLE -->
+<button class="width-toggle" id="widthToggle" title="Toggle fixed/full width">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M5 5l-3 3 3 3M11 5l3 3-3 3"/></svg>
+</button>
+
+<script>
+var C_SKY = '#87CEEB'; var C_BLACK = '#000000'; var C_WHITE = '#ffffff';
+var C_GRID = 'rgba(0,0,0,0.07)'; var C_TICK = '#888';
+var C_SKYALPHA = 'rgba(135,206,235,0.15)';
+
+try { Chart.register(ChartDataLabels); } catch(e) {}
+Chart.defaults.font.family = 'Montserrat';
+Chart.defaults.font.size = 11;
+
+var lightScales = {
+  y: { grid:{color:C_GRID}, ticks:{color:C_TICK,font:{size:10}}, border:{dash:[3,3]} },
+  x: { grid:{color:C_GRID}, ticks:{color:C_TICK,font:{size:10}}, border:{dash:[3,3]} }
+};
+var legendLight = { position:'top', labels:{color:'#444',font:{size:10},boxWidth:10,padding:12} };
+
+var pillLabel = {
+  display:true, color:'#000', font:{size:(window.innerWidth<1024?7:10),weight:'700',family:'Montserrat'},
+  backgroundColor:'rgba(255,255,255,0.92)', borderRadius:3,
+  padding:(window.innerWidth<1024)?{top:1,bottom:1,left:2,right:2}:{top:2,bottom:2,left:5,right:5},
+  borderWidth:1, borderColor:'rgba(0,0,0,0.08)', clamp:true
+};
+
+var edgeAlign = function(ctx) {
+  if (ctx.dataIndex === 0) return 'right';
+  if (ctx.dataIndex === ctx.chart.data.labels.length - 1) return 'left';
+  return ctx.datasetIndex === 0 ? 'top' : 'bottom';
+};
+
+var labels3 = ['Feb 2026','Mar 2026','Apr 2026'];
+
+// CHART 1: Membership Status Trend
+new Chart(document.getElementById('chartMembership'), {
+  type:'line',
+  data:{
+    labels:labels3,
+    datasets:[
+      { label:'Total Members', data:[252,247,248], borderColor:C_BLACK, backgroundColor:'rgba(0,0,0,0.04)', pointBackgroundColor:C_BLACK, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8}) },
+      { label:'Active Members', data:[197,189,189], borderColor:C_SKY, backgroundColor:C_SKYALPHA, pointBackgroundColor:C_SKY, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8}) },
+      { label:'Suspended', data:[55,58,59], borderColor:'#ccc', borderDash:[4,3], fill:false, pointBackgroundColor:'#bbb', borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8}) }
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    layout:{padding:{top:28,left:8,right:36,bottom:16}},
+    plugins:{ legend:legendLight, datalabels:pillLabel },
+    scales:{ y:{ ...lightScales.y, min:0, max:300 }, x:lightScales.x }
+  }
+});
+
+// CHART 2: Revenue by Stream (grouped bar)
+new Chart(document.getElementById('chartRevenue'), {
+  type:'bar',
+  data:{
+    labels:labels3,
+    datasets:[
+      { label:'Memberships', data:[42370,45648,43078], backgroundColor:C_SKY, borderRadius:2 },
+      { label:'Packages', data:[11775,5087,6614], backgroundColor:'#ddd', borderRadius:2 },
+      { label:'Intro Offers', data:[1686,1625,1339], backgroundColor:C_BLACK, borderRadius:2 }
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    layout:{padding:{top:40,left:8,right:16,bottom:8}},
+    plugins:{
+      legend:legendLight,
+      datalabels:{ display:true, align:'end', anchor:'end', offset:1, clamp:true,
+        color:'#000', font:{size:(window.innerWidth<1024?7:9),weight:'700',family:'Montserrat'},
+        backgroundColor:'rgba(255,255,255,0.92)', borderRadius:3,
+        padding:{top:2,bottom:2,left:4,right:4}, borderWidth:1, borderColor:'rgba(0,0,0,0.08)',
+        formatter:function(v){ return '$'+(v/1000).toFixed(1)+'k'; }
+      }
+    },
+    scales:{
+      y:{ ...lightScales.y, ticks:{color:C_TICK,font:{size:10},callback:function(v){return '$'+(v/1000).toFixed(0)+'k';}}, max:55000 },
+      x:lightScales.x
+    }
+  }
+});
+
+// CHART 3: Utilisation Trend
+new Chart(document.getElementById('chartUtil'), {
+  type:'line',
+  data:{
+    labels:labels3,
+    datasets:[
+      { label:'Booking %', data:[57.33,52.98,46.59], borderColor:C_BLACK, backgroundColor:'rgba(0,0,0,0.04)', pointBackgroundColor:C_BLACK, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8,formatter:function(v){return v+'%';}}) },
+      { label:'Attendance %', data:[53.63,49.73,43.86], borderColor:C_SKY, backgroundColor:C_SKYALPHA, pointBackgroundColor:C_SKY, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8,formatter:function(v){return v+'%';}}) }
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    layout:{padding:{top:28,left:8,right:36,bottom:16}},
+    plugins:{ legend:legendLight, datalabels:pillLabel },
+    scales:{ y:{ ...lightScales.y, min:35, max:65, ticks:{color:C_TICK,font:{size:10},callback:function(v){return v+'%';}} }, x:lightScales.x }
+  }
+});
+
+// CHART 4: Sales vs Cancellations
+new Chart(document.getElementById('chartSalesCancel'), {
+  type:'bar',
+  data:{
+    labels:labels3,
+    datasets:[
+      { label:'Sold', data:[21,9,11], backgroundColor:C_SKY, borderRadius:2 },
+      { label:'Cancelled', data:[17,13,10], backgroundColor:C_BLACK, borderRadius:2 }
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    layout:{padding:{top:40,left:8,right:16,bottom:8}},
+    plugins:{
+      legend:legendLight,
+      datalabels:{ display:true, align:'end', anchor:'end', offset:1, clamp:true,
+        color:'#000', font:{size:(window.innerWidth<1024?7:9),weight:'700',family:'Montserrat'},
+        backgroundColor:'rgba(255,255,255,0.92)', borderRadius:3,
+        padding:{top:2,bottom:2,left:4,right:4}, borderWidth:1, borderColor:'rgba(0,0,0,0.08)'
+      }
+    },
+    scales:{ y:{ ...lightScales.y, max:25 }, x:lightScales.x }
+  }
+});
+
+// CHART 5: Attrition Rate
+new Chart(document.getElementById('chartAttrition'), {
+  type:'line',
+  data:{
+    labels:labels3,
+    datasets:[
+      { label:'Attrition %', data:[6.94,5.16,4.05], borderColor:C_BLACK, backgroundColor:'rgba(0,0,0,0.04)', pointBackgroundColor:C_BLACK, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8,formatter:function(v){return v+'%';}}) },
+      { label:'Target (7%)', data:[7,7,7], borderColor:C_SKY, borderDash:[5,4], pointRadius:0, borderWidth:1.5, fill:false, datalabels:{display:false} }
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    layout:{padding:{top:28,left:8,right:36,bottom:16}},
+    plugins:{ legend:legendLight, datalabels:pillLabel },
+    scales:{ y:{ ...lightScales.y, min:0, max:10, ticks:{color:C_TICK,font:{size:10},callback:function(v){return v+'%';}} }, x:lightScales.x }
+  }
+});
+
+// CHART 6: Sales Performance — All Products
+new Chart(document.getElementById('chartSalesPerf'), {
+  type:'line',
+  data:{
+    labels:labels3,
+    datasets:[
+      { label:'Memberships', data:[21,9,11], borderColor:C_SKY, backgroundColor:C_SKYALPHA, pointBackgroundColor:C_SKY, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8}) },
+      { label:'Intro Offers', data:[34,32,26], borderColor:C_BLACK, backgroundColor:'rgba(0,0,0,0.04)', pointBackgroundColor:C_BLACK, borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8}) },
+      { label:'Packs', data:[41,54,42], borderColor:'#ccc', borderDash:[4,3], fill:false, pointBackgroundColor:'#bbb', borderWidth:2, tension:0.3, pointRadius:4, pointHoverRadius:6, datalabels:Object.assign({},pillLabel,{align:edgeAlign,anchor:'center',offset:8}) }
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    layout:{padding:{top:28,left:8,right:36,bottom:16}},
+    plugins:{ legend:legendLight, datalabels:pillLabel },
+    scales:{ y:{ ...lightScales.y, min:0, max:70 }, x:lightScales.x }
+  }
+});
+
+// Scroll handler
+window.addEventListener("scroll", function() {
+  var y = window.scrollY;
+  var btt = document.getElementById("btt");
+  if (y > 300) { btt.classList.add("visible"); }
+  else { btt.classList.remove("visible"); }
+  var sections = ["s01","s02","s03","s04","s05","s06"];
+  var links = document.querySelectorAll(".sec-link");
+  var active = 0;
+  var atBottom = (window.innerHeight + window.scrollY) >= document.body.scrollHeight - 40;
+  if (atBottom) {
+    active = sections.length - 1;
+  } else {
+    sections.forEach(function(id,i) { var el = document.getElementById(id); if (el && el.getBoundingClientRect().top < 100) active = i; });
+  }
+  links.forEach(function(l,i){ l.classList.toggle("active", i===active); });
+});
+
+// Width toggle
+var fixedWidth = true;
+var contentArea = document.querySelector(".content-area");
+document.getElementById("widthToggle").addEventListener("click", function() {
+  fixedWidth = !fixedWidth;
+  if (fixedWidth) { contentArea.style.maxWidth = "1200px"; this.classList.remove("fw"); }
+  else { contentArea.style.maxWidth = "none"; this.classList.add("fw"); }
+});
+
+// Edit mode
+var store = {};
+function initStore() {
+  document.querySelectorAll("[data-field]").forEach(function(el) {
+    var key = el.getAttribute("data-field");
+    if (el.tagName === "UL") {
+      store[key] = Array.from(el.querySelectorAll("li")).map(function(li) { return li.innerHTML; });
+    } else {
+      store[key] = el.innerHTML;
+    }
+  });
+  if (typeof savedStore !== 'undefined') {
+    Object.keys(savedStore).forEach(function(k){ store[k] = savedStore[k]; });
+    renderStore();
+  }
+}
+function renderStore() {
+  document.querySelectorAll("[data-field]").forEach(function(el) {
+    var key = el.getAttribute("data-field");
+    if (!(key in store)) return;
+    if (el.tagName === "UL") {
+      el.innerHTML = store[key].map(function(item) { return "<li>" + item + "</li>"; }).join("");
+    } else {
+      el.innerHTML = store[key];
+    }
+  });
+}
+var editUnlocked = false;
+function triggerEditMode() {
+  if (editUnlocked) {
+    document.body.classList.remove("edit-mode");
+    document.getElementById("editToggleBtn").classList.remove("active");
+    editUnlocked = false;
+  } else {
+    document.getElementById("pwGate").classList.add("active");
+    document.getElementById("pwInput").value = "";
+    document.getElementById("pwError").textContent = "";
+    setTimeout(function() { document.getElementById("pwInput").focus(); }, 100);
+  }
+}
+document.getElementById("pwSubmit").addEventListener("click", checkPassword);
+document.getElementById("pwCancel").addEventListener("click", function() { document.getElementById("pwGate").classList.remove("active"); });
+document.getElementById("pwInput").addEventListener("keydown", function(e) { if (e.key === "Enter") checkPassword(); });
+function checkPassword() {
+  var val = document.getElementById("pwInput").value;
+  if (val === "Strong123*") {
+    document.getElementById("pwGate").classList.remove("active");
+    editUnlocked = true;
+    document.body.classList.add("edit-mode");
+    document.getElementById("editToggleBtn").classList.add("active");
+  } else {
+    document.getElementById("pwError").textContent = "Incorrect password.";
+    document.getElementById("pwInput").value = "";
+    document.getElementById("pwInput").focus();
+  }
+}
+var currentFieldKey = null;
+var fieldConfig = {};
+fieldConfig["exec-issues"] = { type: "bullets", key: "exec-issues" };
+fieldConfig["exec-interventions"] = { type: "bullets", key: "exec-interventions" };
+fieldConfig["exec-outcomes"] = { type: "bullets", key: "exec-outcomes" };
+fieldConfig["mem-insight"] = { type: "multi-para", fields: [{key:"mem-insight-p1",label:"Paragraph 1"},{key:"mem-insight-p2",label:"Paragraph 2"}] };
+fieldConfig["fin-insight"] = { type: "multi-para", fields: [{key:"fin-insight-p1",label:"Paragraph 1"},{key:"fin-insight-p2",label:"Paragraph 2"}] };
+fieldConfig["att-insight"] = { type: "multi-para", fields: [{key:"att-insight-p1",label:"Paragraph 1"},{key:"att-insight-p2",label:"Paragraph 2"}] };
+fieldConfig["sales-insight"] = { type: "multi-para", fields: [{key:"sales-insight-p1",label:"Paragraph 1"},{key:"sales-insight-p2",label:"Paragraph 2"}] };
+fieldConfig["summary-insight"] = { type: "multi-para", fields: [{key:"summary-insight-p1",label:"Paragraph 1"},{key:"summary-insight-p2",label:"Paragraph 2"}] };
+fieldConfig["mem-takeaways"] = { type: "bullets", key: "mem-takeaways" };
+fieldConfig["fin-takeaways"] = { type: "bullets", key: "fin-takeaways" };
+fieldConfig["att-takeaways"] = { type: "bullets", key: "att-takeaways" };
+fieldConfig["sales-takeaways"] = { type: "bullets", key: "sales-takeaways" };
+fieldConfig["summary-takeaways"] = { type: "bullets", key: "summary-takeaways" };
+
+function openEditModal(fieldKey, sectionName, fieldName) {
+  if (!editUnlocked) return;
+  currentFieldKey = fieldKey;
+  var cfg = fieldConfig[fieldKey];
+  document.getElementById("modalSectionLabel").textContent = sectionName;
+  document.getElementById("modalTitle").textContent = fieldName;
+  var body = document.getElementById("modalBody");
+  body.innerHTML = "";
+  if (cfg.type === "bullets") {
+    var bullets = store[cfg.key] || [];
+    var wrapper = document.createElement("div");
+    wrapper.className = "modal-field";
+    var lbl = document.createElement("label");
+    lbl.className = "field-label";
+    lbl.textContent = "Bullet points";
+    wrapper.appendChild(lbl);
+    var listEditor = document.createElement("div");
+    listEditor.className = "bullet-list-editor";
+    listEditor.id = "bulletEditor";
+    bullets.forEach(function(item, i) { listEditor.appendChild(makeBulletRow(item, i)); });
+    var addBtn = document.createElement("button");
+    addBtn.className = "add-bullet-btn";
+    addBtn.textContent = "+ Add bullet";
+    addBtn.onclick = function() { var rows = listEditor.querySelectorAll(".bullet-row").length; listEditor.insertBefore(makeBulletRow("", rows), addBtn); };
+    listEditor.appendChild(addBtn);
+    wrapper.appendChild(listEditor);
+    body.appendChild(wrapper);
+  } else if (cfg.type === "multi-para") {
+    cfg.fields.forEach(function(f) {
+      var wrapper = document.createElement("div");
+      wrapper.className = "modal-field";
+      var lbl = document.createElement("label");
+      lbl.className = "field-label";
+      lbl.textContent = f.label;
+      var ta = document.createElement("textarea");
+      ta.className = "field-input";
+      ta.rows = 5;
+      ta.setAttribute("data-para-key", f.key);
+      ta.addEventListener("input", markDirty);
+      var tmp = document.createElement("div");
+      tmp.innerHTML = store[f.key] || "";
+      ta.value = tmp.textContent || tmp.innerText || "";
+      wrapper.appendChild(lbl);
+      wrapper.appendChild(ta);
+      body.appendChild(wrapper);
+    });
+  }
+  document.getElementById("discardGate").style.display = "none";
+  document.getElementById("editOverlay").classList.add("active");
+}
+function makeBulletRow(content, index) {
+  var row = document.createElement("div");
+  row.className = "bullet-row";
+  var tmp = document.createElement("div");
+  tmp.innerHTML = content;
+  var plainText = tmp.textContent || tmp.innerText || "";
+  var ta = document.createElement("textarea");
+  ta.className = "bullet-input";
+  ta.rows = 2;
+  ta.value = plainText;
+  ta.addEventListener("input", markDirty);
+  var removeBtn = document.createElement("button");
+  removeBtn.className = "bullet-remove";
+  removeBtn.innerHTML = "×";
+  removeBtn.onclick = function() { row.remove(); markDirty(); };
+  row.appendChild(ta);
+  row.appendChild(removeBtn);
+  return row;
+}
+function saveModal() {
+  var cfg = fieldConfig[currentFieldKey];
+  if (cfg.type === "bullets") {
+    var bullets = Array.from(document.querySelectorAll("#bulletEditor .bullet-input")).map(function(ta) { return ta.value.trim(); }).filter(function(v) { return v.length > 0; });
+    store[cfg.key] = bullets;
+  } else if (cfg.type === "multi-para") {
+    cfg.fields.forEach(function(f) { var ta = document.querySelector("[data-para-key=\"" + f.key + "\"]"); if (ta) store[f.key] = ta.value.trim(); });
+  }
+  renderStore();
+  closeModal();
+}
+function closeModal() {
+  document.getElementById("editOverlay").classList.remove("active");
+  document.getElementById("discardGate").style.display = "none";
+  currentFieldKey = null;
+  document.getElementById("btnSave").classList.remove("pending");
+}
+function markDirty() { document.getElementById("btnSave").classList.add("pending"); }
+function showDiscardGate() { document.getElementById("discardGate").style.display = "block"; }
+function hideDiscardGate() { document.getElementById("discardGate").style.display = "none"; }
+function discardAndClose() { document.getElementById("discardGate").style.display = "none"; closeModal(); }
+document.getElementById("btnSave").addEventListener("click", saveModal);
+document.getElementById("btnCancel").addEventListener("click", function() { if (document.getElementById("btnSave").classList.contains("pending")) { showDiscardGate(); } else { closeModal(); } });
+document.getElementById("modalClose").addEventListener("click", function() { if (document.getElementById("btnSave").classList.contains("pending")) { showDiscardGate(); } else { closeModal(); } });
+document.getElementById("btnExport").addEventListener("click", function() { exportHTML(); });
+function exportHTML() {
+  var html = document.documentElement.outerHTML;
+  var storeScript = "<script id=\"saved-store\">var savedStore = " + JSON.stringify(store) + ";<\/script>";
+  html = html.replace("</head>", storeScript + "</head>");
+  var blob = new Blob([html], { type: "text/html" });
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "strong-wetherill-park-management-04-2026.html";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+document.addEventListener("DOMContentLoaded", function() { initStore(); });
+</script>
+
+</body>
+</html>
